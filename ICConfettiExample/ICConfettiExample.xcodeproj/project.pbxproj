@@ -13,6 +13,7 @@
 		1F11076B23566214005094F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11076923566214005094F9 /* Main.storyboard */; };
 		1F11076D23566216005094F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F11076C23566216005094F9 /* Assets.xcassets */; };
 		1F11077023566216005094F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F11076E23566216005094F9 /* LaunchScreen.storyboard */; };
+		333886CFF67C8A18928FE60B /* Pods_ICConfettiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F83D1A6021E9B19E66CF5E /* Pods_ICConfettiExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1F11076C23566216005094F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F11076F23566216005094F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F11077123566216005094F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F83D1A6021E9B19E66CF5E /* Pods_ICConfettiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICConfettiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64027E7975A6CE3BBF4D1C17 /* Pods-ICConfettiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICConfettiExample.release.xcconfig"; path = "Target Support Files/Pods-ICConfettiExample/Pods-ICConfettiExample.release.xcconfig"; sourceTree = "<group>"; };
+		A985CF701DF52F955DFA8206 /* Pods-ICConfettiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICConfettiExample.debug.xcconfig"; path = "Target Support Files/Pods-ICConfettiExample/Pods-ICConfettiExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333886CFF67C8A18928FE60B /* Pods_ICConfettiExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1F11076223566214005094F9 /* ICConfettiExample */,
 				1F11076123566214005094F9 /* Products */,
+				334CB3E34E4BEFF0F4AF3DCD /* Pods */,
+				BEE2B89AB0DEA56A86982343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = ICConfettiExample;
 			sourceTree = "<group>";
 		};
+		334CB3E34E4BEFF0F4AF3DCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A985CF701DF52F955DFA8206 /* Pods-ICConfettiExample.debug.xcconfig */,
+				64027E7975A6CE3BBF4D1C17 /* Pods-ICConfettiExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEE2B89AB0DEA56A86982343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22F83D1A6021E9B19E66CF5E /* Pods_ICConfettiExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F11077423566216005094F9 /* Build configuration list for PBXNativeTarget "ICConfettiExample" */;
 			buildPhases = (
+				1D63DBC3B6F13743C9B9EC15 /* [CP] Check Pods Manifest.lock */,
 				1F11075C23566214005094F9 /* Sources */,
 				1F11075D23566214005094F9 /* Frameworks */,
 				1F11075E23566214005094F9 /* Resources */,
+				0B6215DE48F77CD8A3B7851E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6215DE48F77CD8A3B7851E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICConfettiExample/Pods-ICConfettiExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICConfettiExample/Pods-ICConfettiExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ICConfettiExample/Pods-ICConfettiExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D63DBC3B6F13743C9B9EC15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICConfettiExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F11075C23566214005094F9 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		1F11077523566216005094F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A985CF701DF52F955DFA8206 /* Pods-ICConfettiExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		1F11077623566216005094F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64027E7975A6CE3BBF4D1C17 /* Pods-ICConfettiExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

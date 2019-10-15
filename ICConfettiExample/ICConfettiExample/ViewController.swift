@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import ICConfetti
 
 class ViewController: UIViewController {
+    
+    var icConfetti: ICConfetti!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        icConfetti = ICConfetti()
+        icConfetti.rain(in: view)
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        icConfetti.stopRaining()
+    }
 
 }
 
