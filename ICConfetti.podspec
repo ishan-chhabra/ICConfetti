@@ -4,6 +4,8 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "It's raining confetti. 🎉"
 
+  spec.platform = :ios, '13.0'
+
   spec.description  = <<-DESC
     Adding delight with confetti. ICConfetti lets you rain confetti in your views.
                    DESC
