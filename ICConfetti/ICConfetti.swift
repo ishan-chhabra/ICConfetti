@@ -83,7 +83,7 @@ public final class ICConfetti {
        - with: The emitter configuration.
 
     */
-    public func startHousepartyIn(in view: UIView, with options: EmitterOptions? = nil) {
+    public func rain(in view: UIView, with options: EmitterOptions? = nil) {
         emitter.emitterPosition = CGPoint(x: view.frame.size.width / 2, y: -10)
         emitter.emitterShape = CAEmitterLayerEmitterShape.line
         emitter.emitterSize = CGSize(width: view.frame.size.width, height: 2.0)
@@ -95,7 +95,7 @@ public final class ICConfetti {
     /**
     Stops the particle rain.
     */
-    public func stopHouseparty(){
+    public func stopRaining(){
         emitter.birthRate = 0
     }
     
