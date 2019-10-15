@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1F5933B32354AA8D00EB74C3 /* ICConfetti.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5933B12354AA8D00EB74C3 /* ICConfetti.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F5933BA2354B00200EB74C3 /* ICConfetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5933B92354B00200EB74C3 /* ICConfetti.swift */; };
+		1F5933BC2354B16F00EB74C3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5933BB2354B16F00EB74C3 /* Media.xcassets */; };
+		1F5933FE23558B7100EB74C3 /* Media.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F5933FD23558B7100EB74C3 /* Media.bundle */; };
+		1F59340023558E1000EB74C3 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5933FF23558E1000EB74C3 /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F5933AE2354AA8D00EB74C3 /* ICConfetti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ICConfetti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5933B12354AA8D00EB74C3 /* ICConfetti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICConfetti.h; sourceTree = "<group>"; };
 		1F5933B22354AA8D00EB74C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5933B92354B00200EB74C3 /* ICConfetti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICConfetti.swift; sourceTree = "<group>"; };
+		1F5933BB2354B16F00EB74C3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1F5933FD23558B7100EB74C3 /* Media.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Media.bundle; sourceTree = "<group>"; };
+		1F5933FF23558E1000EB74C3 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				1F5933B12354AA8D00EB74C3 /* ICConfetti.h */,
 				1F5933B22354AA8D00EB74C3 /* Info.plist */,
+				1F5933B92354B00200EB74C3 /* ICConfetti.swift */,
+				1F5933BB2354B16F00EB74C3 /* Media.xcassets */,
+				1F5933FF23558E1000EB74C3 /* Assets */,
+				1F5933FD23558B7100EB74C3 /* Media.bundle */,
 			);
 			path = ICConfetti;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					1F5933AD2354AA8D00EB74C3 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -121,6 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5933FE23558B7100EB74C3 /* Media.bundle in Resources */,
+				1F59340023558E1000EB74C3 /* Assets in Resources */,
+				1F5933BC2354B16F00EB74C3 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5933BA2354B00200EB74C3 /* ICConfetti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		1F5933B72354AA8D00EB74C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M8DJLTB734;
@@ -276,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishanchhabra.ICConfetti;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +303,7 @@
 		1F5933B82354AA8D00EB74C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M8DJLTB734;
