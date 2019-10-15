@@ -84,7 +84,7 @@ pod 'ICConfetti'
 
 **Web**: [Ishan Chhabra](https://ishanchhabra.com)\
 **Twitter**: [@chh_abracadabra](https://twitter.com/chh_abracadabra)\
-**Medium**: [@ish2gud](https://medium.com/@ish2gud)
+**Medium**: [@chh_abracadabra](https://medium.com/@chh_abracadabra)
 
 ## License 📜
 
