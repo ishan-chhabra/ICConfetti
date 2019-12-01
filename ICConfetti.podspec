@@ -3,6 +3,7 @@ Pod::Spec.new do |spec|
   spec.name         = "ICConfetti"
   spec.version      = "0.0.1"
   spec.summary      = "It's raining confetti. 🎉"
+  spec.swift_version = '5.0'
 
   spec.platform = :ios, '13.0'
 
